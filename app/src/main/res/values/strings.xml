@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BlueLock</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_matricula">Matrícula</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_matricula">Matrícula inválida</string>
+    <string name="error_incorrect_password">Matrícula ou Senha incorretos</string>
+    <string name="error_invalid_password">Senha incorreta</string>
+    <string name="error_field_required">Esse campo é obrigatório</string>
+    <string name="title_activity_admin">Controle</string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <!-- Strings related to sobre -->
+    <string name="activity_sobre_title"> - Sobre</string>
+    <string name="activity_sobre_title1">Universidade Federal da Bahia</string>
+    <string name="activity_sobre_title2">ENGC50 - Sistemas Microprocessados</string>
+    <string name="activity_sobre_title3">Professor José Emílio</string>
+    <string name="activity_sobre_title4">Projeto de tranca eletrônica</string>
+    <string name="activity_sobre_title5">Equipe:\nChristian\nFernando\nFelipe\nRaffaello Salvetti</string>
+
+    <!-- Strings related to usuarios -->
+    <string name="title_activity_usuarios">Usuários</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
