@@ -15,6 +15,7 @@ import br.ufba.engc50.bluelock.PerfilFragment;
 import br.ufba.engc50.bluelock.R;
 import br.ufba.engc50.bluelock.SobreFragment;
 import br.ufba.engc50.bluelock.TravaFragment;
+import br.ufba.engc50.bluelock.UsuarioFragment;
 import br.ufba.engc50.bluelock.remote.MicrocontrollerActions;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,7 +81,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_relatorio) {
 
         } else if (id == R.id.nav_usuarios) {
-            //content = new Intent(this, UsuariosActivity.class);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.frameLayoutFragmentMainActivity, new UsuarioFragment())
+                    .commit();
         } else if (id == R.id.nav_perfil) {
             Bundle args = new Bundle();
             args.putChar(PerfilFragment.EXTRA_TIPO_ACAO, 'e');
