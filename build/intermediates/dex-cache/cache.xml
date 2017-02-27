@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_aba2cf8e784aa5e1372650abd09528b07833d42a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_f800b405801d3eabc07f7de5bd3eaf80df8ee5b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.8.0_b3420364b29d248dd236df0c9dfedaa16ea7fdd2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8dbf2ad96f15e1f58493b5bf303f5aba178af339">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_3e18e896674f0cead10c8f38ab0f2c51f1d58d3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.8.0_24c4e5b18122219a3c0f26d7682737addd1ff14a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_363521377bc23aa8b258d516c9928dcad6396a99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.8.0_67abda3f0bfb1142c1718e6c5a718089350e00d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9a52deb2b10597fe3b39fb6d7699d5a3dfe93c2e">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/instant-run_92bd99dc909b0ca41626bd29e894acfd19fb46be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_33af94ffd9cb9f511106623644410e98fb296375.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_1c9cee205b840d5c433d159e4c2acb69223ce5b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_911a15c98f856dda043105169052a7f1865b44fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_1daf3570ac38c79c866a991c7ba24ebcbbed6b9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_f447e529612a47b0913a168de1cf0a4e5f09f5f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_214f9c46d52ea344591ae1f0bf3ab923bafcd427.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/raffaello/dev/workspace/DROID/ENGC50-BlueLock/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_406a05695e0a4320ae11974bc29a1a10a6b04838.jar" />
+    </item>
+
+</items>

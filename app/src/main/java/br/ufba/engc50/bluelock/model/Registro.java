@@ -4,12 +4,18 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
+import br.ufba.engc50.bluelock.local.Global;
 
 /**
  * Created by raffaello on 27/02/17.
@@ -25,7 +31,7 @@ public class Registro implements Parcelable {
             String dt;
             matricula = jsonObject.getInt("matricula");
             acao = jsonObject.getString("acao");
-            dt = jsonObject.getString("data");
+            dt = jsonObject.getString("data_hora");
             if(!dt.equals("null"))
                 this.data = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(dt);
         } catch (Exception ex) {
@@ -78,6 +84,38 @@ public class Registro implements Parcelable {
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public String getData_ddMMyyyyHHmmss() {
+        return new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(data);
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public String getAcao() {
+        return acao;
+    }
+
+    public void setAcao(String acao) {
+        this.acao = acao;
+    }
+
+    public UrlEncodedFormEntity getPostParameters() {
+        List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+        nameValuePairs.add(new BasicNameValuePair("LogAcesso[cod_usuario]", String.valueOf(Global.getUsuarioLogado().getCodigo())));
+        nameValuePairs.add(new BasicNameValuePair("LogAcesso[acao]", String.valueOf(this.getAcao())));
+        try {
+            return new UrlEncodedFormEntity(nameValuePairs);
+        } catch (Exception ex){
+            Log.e("Registro", "erro criando parametros post: " + ex.getMessage());
+            return null;
+        }
     }
 
     @Override

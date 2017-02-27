@@ -6,6 +6,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
         applicationId "br.ufba.engc50.bluelock"
         minSdkVersion 14
         targetSdkVersion 23

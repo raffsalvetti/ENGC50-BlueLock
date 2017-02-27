@@ -1,8 +1,8 @@
 package br.ufba.engc50.bluelock.view.fragment;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,10 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 import br.ufba.engc50.bluelock.R;
+import br.ufba.engc50.bluelock.model.Registro;
 import br.ufba.engc50.bluelock.model.adapter.RegistroRecyclerViewAdapter;
-import br.ufba.engc50.bluelock.view.fragment.dummy.DummyContent;
-import br.ufba.engc50.bluelock.view.fragment.dummy.DummyContent.DummyItem;
 
 /**
  * A fragment representing a list of Items.
@@ -69,7 +70,8 @@ public class RegistroFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new RegistroRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            ArrayList<Registro> registros = getArguments().getParcelableArrayList("registros");
+            recyclerView.setAdapter(new RegistroRecyclerViewAdapter(registros, mListener));
         }
         return view;
     }
@@ -104,6 +106,6 @@ public class RegistroFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction(Registro item);
     }
 }

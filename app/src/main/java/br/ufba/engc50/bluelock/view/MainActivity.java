@@ -28,9 +28,11 @@ import org.json.JSONObject;
 
 import java.net.URI;
 
+import br.ufba.engc50.bluelock.model.Registro;
 import br.ufba.engc50.bluelock.model.Usuario;
 import br.ufba.engc50.bluelock.remote.RestClient;
 import br.ufba.engc50.bluelock.view.fragment.BaseFragmentPerfil;
+import br.ufba.engc50.bluelock.view.fragment.RegistroFragment;
 import br.ufba.engc50.bluelock.view.fragment.UsuarioDialog;
 import br.ufba.engc50.bluelock.view.fragment.PerfilFragment;
 import br.ufba.engc50.bluelock.R;
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //android.app.FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_relatorio) {
-            setTitle("Relatórios");
+            setFragmentRelatorio();
         } else if (id == R.id.nav_usuarios) {
             setFragmentUsuarios();
         } else if (id == R.id.nav_perfil) {
@@ -134,6 +136,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    private void setFragmentRelatorio() {
+        setTitle("Relatórios");
+        RestClient client = new RestClient(this, Global.ACAO_RELATORIO_CALLBACK);
+        HttpPost httpPost = new HttpPost(URI.create(Global.ENDPOINT_ACAO_RELATORIO));
+        client.execute(httpPost);
+    }
+
     private void setFragmentUsuarios() {
         setTitle("Usuários");
         RestClient client = new RestClient(this, Global.USUARIO_LISTAR_CALLBACK);
@@ -146,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onResume();
         registerReceiver(broadcastReceiver, new IntentFilter(Global.USUARIO_LISTAR_CALLBACK));
         registerReceiver(broadcastReceiver, new IntentFilter(Global.USUARIO_REMOVER_CALLBACK));
+        registerReceiver(broadcastReceiver, new IntentFilter(Global.ACAO_RELATORIO_CALLBACK));
     }
 
     @Override
@@ -175,6 +185,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     setFragmentUsuarios();
                 } else {
                     Snackbar.make(getCurrentFocus(), response, Snackbar.LENGTH_LONG).show();
+                }
+            } else if(intent.getAction().equals(Global.ACAO_RELATORIO_CALLBACK)) {
+                if(response != null && !response.isEmpty() && !response.equals("null")) {
+                    Bundle args = new Bundle();
+                    args.putParcelableArrayList("registros", Registro.buildListRegistro(response));
+                    RegistroFragment frag = new RegistroFragment();
+                    frag.setArguments(args);
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.frameLayoutFragmentMainActivity, frag)
+                            .commit();
                 }
             }
             Log.i("MainActivity", "RESPONSE = " + response);
