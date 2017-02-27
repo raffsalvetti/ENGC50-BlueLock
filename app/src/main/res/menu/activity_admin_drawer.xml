@@ -25,7 +25,7 @@
             <item
                 android:id="@+id/nav_trava"
                 android:icon="@drawable/ic_menu_trava"
-                android:title="Trava" />
+                android:title="Fechadura" />
             <item
                 android:id="@+id/nav_sobre"
                 android:icon="@drawable/ic_menu_sobre"

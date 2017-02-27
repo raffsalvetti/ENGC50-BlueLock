@@ -6,9 +6,10 @@
     <string name="prompt_password">Senha</string>
     <string name="action_sign_in">Login</string>
     <string name="action_sign_in_short">Login</string>
-    <string name="error_invalid_matricula">Matrícula inválida</string>
+    <string name="error_invalid_matricula">A matrícula deve conter 4 digitos.</string>
     <string name="error_incorrect_password">Matrícula ou Senha incorretos</string>
-    <string name="error_invalid_password">Senha incorreta</string>
+    <string name="error_no_service">Serviço de autenticação indisponível, tente novamente em alguns minutos.</string>
+    <string name="error_invalid_password">A senha deve conter 4 digitos.</string>
     <string name="error_field_required">Esse campo é obrigatório</string>
     <string name="title_activity_admin">Controle</string>
 
